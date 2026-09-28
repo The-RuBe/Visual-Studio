@@ -11,16 +11,136 @@
 
 <body class="background">
     <header class="header">
+        <div class="logo">
+            <img src="image/fondoconletras-trasparente.png" alt="Logo" width="55" height="45">
+        </div>
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><img src="image/fondoconletras-trasparente.png" alt="Logo" class="nav-link"
-                    width="55" height="45"></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">Acerca de</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#Inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#Novedades" class="nav-link">Novedades</a></li>
+                <li class="nav-item"><a href="#Catálogo" class="nav-link">Catálogo</a></li>
+                <li class="nav-item"><a href="#Mi_lista" class="nav-link">Mi lista</a></li>
             </ul>
         </nav>
+        <div class="nav-actions">
+            <button class="btn-primary">Iniciar sesión</button>
+        </div>
     </header>
+
+    <main>
+        <section class="banner" id="Inicio">
+            <img src="image/banner.jpg" alt="Banner Principal" class="banner-image">
+        </section>
+
+        <section class="novedades" id="Novedades">
+            <h1 class="section-title cinzel-t1">Novedades</h1>
+            <p class="section-subtitle inter-t1">Explora los últimos lanzamientos y actualizaciones más recientes en
+                nuestro catálogo.</p>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <img src="image/shingeki.jpg" alt="Portada Anime 1" class="card-img">
+                    <h3 class="card-title inter-t3">Shingeki no Kyojin</h3>
+                </article>
+                <article class="card">
+                    <img src="image/jujutsu.jpg" alt="Portada Anime 2" class="card-img">
+                    <h3 class="card-title inter-t3">Jujutsu Kaisen</h3>
+                </article>
+                <article class="card">
+                    <img src="image/kimetsu.jpg" alt="Portada Anime 3" class="card-img">
+                    <h3 class="card-title inter-t3">Kimetsu no Yaiba</h3>
+                </article>
+                <article class="card">
+                    <img src="image/chainsawman.jpg" alt="Portada Anime 4" class="card-img">
+                    <h3 class="card-title inter-t3">Chainsaw Man</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="top-rated" id="Catálogo">
+            <h2 class="section-title cinzel-t2">Top Calificaciones</h2>
+
+            <div class="list-container">
+                <article class="list-item">
+                    <img src="https://placehold.co/100x100/4a325e/e2dcde?text=1" alt="Top 1" class="list-img">
+                    <div class="list-content">
+                        <h3 class="list-title inter-t3">Fullmetal Alchemist: Brotherhood</h3>
+                        <p class="list-desc inter-t1">Considerado por muchos como una obra maestra indiscutible.</p>
+                        <div class="rating">
+                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
+                            <span class="inter-t2">9.8</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="list-item">
+                    <img src="https://placehold.co/100x100/4a325e/e2dcde?text=2" alt="Top 2" class="list-img">
+                    <div class="list-content">
+                        <h3 class="list-title inter-t3">Steins;Gate</h3>
+                        <p class="list-desc inter-t1">Un thriller de ciencia ficción con viajes en el tiempo
+                            inigualable.</p>
+                        <div class="rating">
+                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
+                            <span class="inter-t2">9.5</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="list-item">
+                    <img src="https://placehold.co/100x100/4a325e/e2dcde?text=3" alt="Top 3" class="list-img">
+                    <div class="list-content">
+                        <h3 class="list-title inter-t3">Hunter x Hunter</h3>
+                        <p class="list-desc inter-t1">Aventura épica con uno de los mejores sistemas de poder.</p>
+                        <div class="rating">
+                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
+                            <span class="inter-t2">9.4</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="list-item">
+                    <img src="https://placehold.co/100x100/4a325e/e2dcde?text=4" alt="Top 4" class="list-img">
+                    <div class="list-content">
+                        <h3 class="list-title inter-t3">Gintama</h3>
+                        <p class="list-desc inter-t1">Comedia, acción y drama mezclados de manera brillante.</p>
+                        <div class="rating">
+                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
+                            <span class="inter-t2">9.3</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3 class="cinzel-t1">KUROSHIORI</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="inter-t3">Enlaces</h4>
+                    <ul>
+                        <li><a href="#Inicio" class="inter-t1">Inicio</a></li>
+                        <li><a href="#Novedades" class="inter-t1">Novedades</a></li>
+                        <li><a href="#Catálogo" class="inter-t1">Catálogo</a></li>
+                        <li><a href="#Mi_lista" class="inter-t1">Mi lista</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="inter-t3">Comunidad</h4>
+                    <ul>
+                        <li><a href="#" class="inter-t1">Foro</a></li>
+                        <li><a href="#" class="inter-t1">Discord</a></li>
+                        <li><a href="#" class="inter-t1">Twitter</a></li>
+                        <li><a href="#" class="inter-t1">Ayuda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom inter-t1">
+            <p>&copy; 2024 Kuroshiori. Todos los derechos reservados. <a href="#" class="inter-t1">Política de
+                    Privacidad</a> | <a href="#" class="inter-t1">Términos de Servicio</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
