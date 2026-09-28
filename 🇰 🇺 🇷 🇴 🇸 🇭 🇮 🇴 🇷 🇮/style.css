@@ -229,6 +229,12 @@
   gap: 0.25rem;
 }
 
+.icon-star {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+}
+
 .main-footer {
   background-color: #1b1622;
   border-top: 2px solid #4a325e;
