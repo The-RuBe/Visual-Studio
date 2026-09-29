@@ -5,140 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🇰 🇺 🇷 🇴 🇸 🇭 🇮 🇴 🇷 🇮 </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="image/fondo-trasparente.png" type="image/png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star_rate" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
 </head>
 
-<body class="background">
+<body class="fondo">
     <header class="header">
         <div class="logo">
-            <img src="image/fondoconletras-trasparente.png" alt="Logo" width="55" height="45">
+            <img src="image/fondoconletras-trasparente.png" alt="Logo" width="65" height="55">
         </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#Inicio" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#Novedades" class="nav-link">Novedades</a></li>
-                <li class="nav-item"><a href="#Catálogo" class="nav-link">Catálogo</a></li>
-                <li class="nav-item"><a href="#Mi_lista" class="nav-link">Mi lista</a></li>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li class="menu-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Novedades</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Catálogo</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Mi lista</a></li>
             </ul>
         </nav>
-        <div class="nav-actions">
-            <a href="iniciar_sesion.html" class="btn-primary" style="text-decoration: none;">Iniciar sesión</a>
+        <div>
+            <button class="button">Iniciar sesión</button>
         </div>
     </header>
 
     <main>
-        <section class="banner" id="Inicio">
+        <section class="banner">
             <img src="image/banner.jpg" alt="Banner Principal" class="banner-image">
         </section>
 
         <section class="novedades" id="Novedades">
-            <h1 class="section-title cinzel-t1">Novedades</h1>
-            <p class="section-subtitle inter-t1">Explora los últimos lanzamientos y actualizaciones más recientes en
+            <h1 class="section-titulo cinzel-t1">Novedades</h1>
+            <p class="section-subtitulo inter-t2">Explora los últimos lanzamientos y actualizaciones más recientes en
                 nuestro catálogo.</p>
 
-            <div class="cards-grid">
-                <article class="card">
-                    <img src="image/shingeki.jpg" alt="Portada Anime 1" class="card-img">
-                    <h3 class="card-title inter-t3">Shingeki no Kyojin</h3>
-                </article>
-                <article class="card">
-                    <img src="image/jujutsu.jpg" alt="Portada Anime 2" class="card-img">
-                    <h3 class="card-title inter-t3">Jujutsu Kaisen</h3>
-                </article>
-                <article class="card">
-                    <img src="image/kimetsu.jpg" alt="Portada Anime 3" class="card-img">
-                    <h3 class="card-title inter-t3">Kimetsu no Yaiba</h3>
-                </article>
-                <article class="card">
-                    <img src="image/chainsawman.jpg" alt="Portada Anime 4" class="card-img">
-                    <h3 class="card-title inter-t3">Chainsaw Man</h3>
-                </article>
+            <div class="tarjetas-grid">
+                <div class="tarjetas">
+                    <img src="image/shingeki.jpg" alt="Portada Anime 1" class="tarjetas-image">
+                    <h3 class="tarjetas-titulo inter-t3">Shingeki no Kyojin</h3>
+                </div>
+                <div class="tarjetas">
+                    <img src="image/jujutsu.jpg" alt="Portada Anime 2" class="tarjetas-image">
+                    <h3 class="tarjetas-titulo inter-t3">Jujutsu Kaisen</h3>
+                </div>
+                <div class="tarjetas">
+                    <img src="image/kimetsu.jpg" alt="Portada Anime 3" class="tarjetas-image">
+                    <h3 class="tarjetas-titulo inter-t3">Kimetsu no Yaiba</h3>
+                </div>
+                <div class="tarjetas">
+                    <img src="image/chainsawman.jpg" alt="Portada Anime 4" class="tarjetas-image">
+                    <h3 class="tarjetas-titulo inter-t3">Chainsaw Man</h3>
+                </div>
             </div>
         </section>
 
-        <section class="top-rated" id="Catálogo">
-            <h2 class="section-title cinzel-t2">Top Calificaciones</h2>
+        <section class="calificaciones">
+            <h2 class="section-titulo cinzel-t2">Top Calificaciones</h2>
 
-            <div class="list-container">
-                <article class="list-item">
-                    <img src="image/fullmetal.webp" alt="Top 1" class="list-img">
-                    <div class="list-content">
-                        <h3 class="list-title inter-t3">Fullmetal Alchemist: Brotherhood</h3>
-                        <p class="list-desc inter-t1">Considerado por muchos como una obra maestra indiscutible.</p>
-                        <div class="rating">
-                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
-                            <span class="inter-t2">9.8</span>
+            <div class="lista-contenedor">
+                <div class="lista-items">
+                    <img src="image/fullmetal.webp" alt="Top 1" class="lista-image">
+                    <div class="lista-contenido">
+                        <h3 class="lista-titulo cinzel-t2">Fullmetal Alchemist: Brotherhood</h3>
+                        <p class="lista-descripcion inter-t3">Considerado por muchos como una obra maestra indiscutible.
+                        </p>
+                        <div class="ranking">
+                            <span class="material-symbols-outlined">star_rate</span>
+                            <span class="cinzel-t3">9.8</span>
                         </div>
                     </div>
-                </article>
-                <article class="list-item">
-                    <img src="image/steins.jpg" alt="Top 2" class="list-img">
-                    <div class="list-content">
-                        <h3 class="list-title inter-t3">Steins;Gate</h3>
-                        <p class="list-desc inter-t1">Un thriller de ciencia ficción con viajes en el tiempo
+                </div>
+                <div class="lista-items">
+                    <img src="image/steins.jpg" alt="Top 2" class="lista-image">
+                    <div class="lista-contenido">
+                        <h3 class="lista-titulo cinzel-t2">Steins;Gate</h3>
+                        <p class="lista-descripcion inter-t3">Un thriller de ciencia ficción con viajes en el tiempo
                             inigualable.</p>
-                        <div class="rating">
-                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
-                            <span class="inter-t2">9.5</span>
+                        <div class="ranking">
+                            <span class="material-symbols-outlined">star_rate</span>
+                            <span class="cinzel-t3">9.5</span>
                         </div>
                     </div>
-                </article>
-                <article class="list-item">
-                    <img src="image/hunter.jpg" alt="Top 3" class="list-img">
-                    <div class="list-content">
-                        <h3 class="list-title inter-t3">Hunter x Hunter</h3>
-                        <p class="list-desc inter-t1">Aventura épica con uno de los mejores sistemas de poder.</p>
-                        <div class="rating">
-                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
-                            <span class="inter-t2">9.4</span>
+                </div>
+                <div class="lista-items">
+                    <img src="image/hunter.jpg" alt="Top 3" class="lista-image">
+                    <div class="lista-contenido">
+                        <h3 class="lista-titulo cinzel-t2">Hunter x Hunter</h3>
+                        <p class="lista-descripcion inter-t3">Aventura épica con uno de los mejores sistemas de poder.
+                        </p>
+                        <div class="ranking">
+                            <span class="material-symbols-outlined">star_rate</span>
+                            <span class="cinzel-t3">9.4</span>
                         </div>
                     </div>
-                </article>
-                <article class="list-item">
-                    <img src="image/gintama.jpg" alt="Top 4" class="list-img">
-                    <div class="list-content">
-                        <h3 class="list-title inter-t3">Gintama</h3>
-                        <p class="list-desc inter-t1">Comedia, acción y drama mezclados de manera brillante.</p>
-                        <div class="rating">
-                            <img src="image/icono_estrella.svg" class="icon-star" alt="icono_estrella">
-                            <span class="inter-t2">9.3</span>
+                </div>
+                <div class="lista-items">
+                    <img src="image/gintama.jpg" alt="Top 4" class="lista-image">
+                    <div class="lista-contenido">
+                        <h3 class="lista-titulo cinzel-t2">Gintama</h3>
+                        <p class="lista-descripcion inter-t3">Comedia, acción y drama mezclados de manera brillante.</p>
+                        <div class="ranking">
+                            <span class="material-symbols-outlined">star_rate</span>
+                            <span class="cinzel-t3">9.3</span>
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="image/fondoconletras-trasparente.png" alt="Logo" width="55" height="45">
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div>
+                <img src="image/fondoconletras-trasparente.png" alt="Logo" width="65" height="55">
             </div>
             <div class="footer-links">
-                <div class="footer-column">
-                    <h4 class="inter-t3">Enlaces</h4>
+                <div class="footer-columna">
+                    <h4 class="cinzel-t2">Enlaces</h4>
                     <ul>
-                        <li><a href="#Inicio" class="inter-t1">Inicio</a></li>
-                        <li><a href="#Novedades" class="inter-t1">Novedades</a></li>
-                        <li><a href="#Catálogo" class="inter-t1">Catálogo</a></li>
-                        <li><a href="#Mi_lista" class="inter-t1">Mi lista</a></li>
+                        <li><a href="#" class="inter-t3">Inicio</a></li>
+                        <li><a href="#" class="inter-t3">Novedades</a></li>
+                        <li><a href="#" class="inter-t3">Catálogo</a></li>
+                        <li><a href="#" class="inter-t3">Mi lista</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4 class="inter-t3">Comunidad</h4>
+                <div class="footer-columna">
+                    <h4 class="cinzel-t2">Comunidad</h4>
                     <ul>
-                        <li><a href="#" class="inter-t1">Foro</a></li>
-                        <li><a href="#" class="inter-t1">Discord</a></li>
-                        <li><a href="#" class="inter-t1">Twitter</a></li>
-                        <li><a href="#" class="inter-t1">Ayuda</a></li>
+                        <li><a href="#" class="inter-t3">Foro</a></li>
+                        <li><a href="#" class="inter-t3">Discord</a></li>
+                        <li><a href="#" class="inter-t3">Twitter</a></li>
+                        <li><a href="#" class="inter-t3">Ayuda</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom inter-t1">
-            <p>&copy; 2024 Kuroshiori. Todos los derechos reservados. <a href="#" class="inter-t1">Política de
-                    Privacidad</a> | <a href="#" class="inter-t1">Términos de Servicio</a></p>
+        <div class="footer-inferior">
+            <p class="inter-t1">&copy; 2026 Kuroshiori. Todos los derechos reservados. <a href="#">Política
+                    de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
         </div>
     </footer>
 </body>

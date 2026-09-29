@@ -1,0 +1,262 @@
+.cinzel-t1 {
+  font-family: "Cinzel", "Comic Sans MS", cursive;
+  font-weight: 900;
+  color: #4a325e;
+}
+
+.cinzel-t2 {
+  font-family: "Cinzel", "Comic Sans MS", cursive;
+  font-weight: 700;
+  color: #4a325e;
+}
+
+.cinzel-t3 {
+  font-family: "Cinzel", "Comic Sans MS", cursive;
+  font-weight: 600;
+  color: #c39B58;
+}
+
+.inter-t1 {
+  font-family: "Inter", "Courier New", monospace;
+  font-weight: 400;
+  color: #e2dcde;
+}
+
+.inter-t2 {
+  font-family: "Inter", "Courier New", monospace;
+  font-weight: 500;
+  color: #e2dcde;
+}
+
+.inter-t3 {
+  font-family: "Inter", "Courier New", monospace;
+  font-weight: 600;
+  color: #e2dcde;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.fondo {
+  background-color: #1b1622;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  padding: 19.2px 32px;
+}
+
+.menu-lista {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu-lista a {
+  color: #e2dcde;
+  text-decoration: none;
+  font-family: "Cinzel", "Comic Sans MS", cursive;
+  font-weight: 500;
+}
+
+.menu-lista a:hover {
+  color: #795d96;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4a325e;
+  color: #e2dcde;
+  border: none;
+  padding: 9.6px 19.2px;
+  font-family: "Inter", "Courier New", monospace;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #795d96;
+}
+
+.banner {
+  margin: 0 0 32px 0;
+}
+
+.banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.novedades {
+  max-width: 1200px;
+  margin: 64px auto;
+}
+
+.section-titulo {
+  margin-bottom: 8px;
+}
+
+.section-subtitulo {
+  margin-bottom: 32px;
+}
+
+.tarjetas {
+  background-color: #1b1622;
+  border: 2px solid #4a325e;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+
+.tarjetas-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.tarjetas-titulo {
+  margin-top: auto;
+}
+
+.calificaciones {
+  max-width: 1200px;
+  margin: 64px auto;
+}
+
+.lista-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.lista-items {
+  display: flex;
+  background-color: #1b1622;
+  border: 2px solid #4a325e;
+  border-radius: 8px;
+  padding: 24px;
+  gap: 24px;
+  align-items: center;
+}
+
+.lista-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.lista-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lista-titulo {
+  margin-bottom: 8px;
+}
+
+.lista-descripcion {
+  margin-bottom: 8px;
+}
+
+.ranking {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  color: #c39B58;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1b1622;
+  border-top: 2px solid #4a325e;
+  padding: 24px 0;
+  margin-top: 64px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0 24px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 64px;
+}
+
+.footer-columna h4 {
+  margin-bottom: 16px;
+}
+
+.footer-columna ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-columna ul li a {
+  text-decoration: none;
+}
+
+.footer-columna ul li a:hover {
+  color: #795d96;
+}
+
+.footer-inferior {
+  width: 100%;
+  margin-top: 48px;
+  text-align: center;
+  padding: 24px 24px 0;
+  border-top: 1px solid #4a325e;
+}
+
+.footer-inferior a {
+  color: #e2dcde;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer-inferior a:hover {
+  color: #795d96;
+}
