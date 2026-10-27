@@ -1,0 +1,80 @@
+/* resetea los estilos del navegador */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabecera */
+header {
+  display: block;
+  width: 100%;
+}
+
+#logo {
+  /* Logo centrado */
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+header div img {
+  max-width: 100px;
+  margin: 50px;
+}
+
+header nav {
+  float: left;
+  width: 50%;
+}
+
+#redes {
+  float: left;
+  width: 50%;
+}
+
+header nav ul li{
+  background-color: #bbdb88;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header nav {
+  float: left;
+  width: 50%;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#redes {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Arial";
+  font-size: 12px;
+}
+
+header nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+header li:nth-child(4) a {
+  color: red;
+}
+
+header li:nth-child(4) a:hover {
+  text-decoration: underline;
+}
+
+#redes:first-child::after {
+}
