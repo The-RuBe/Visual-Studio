@@ -1,0 +1,206 @@
+/* resetea los estilos del navegador */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabecera */
+header {
+  display: block;
+  width: 100%;
+}
+
+#logo {
+  /* Logo centrado */
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+header div img {
+  max-width: 100px;
+  margin: 50px;
+}
+
+header nav {
+  float: left;
+  width: 50%;
+}
+
+#redes {
+  float: left;
+  width: 50%;
+}
+
+header nav ul {
+  display: inline;
+  background-color: #bbdb88;
+  border-radius: 10px;
+  padding: 10px 15px 15px 15px;
+  margin-left: 20px;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  text-align: left;
+  padding: 20px;
+}
+
+#redes {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Arial";
+  font-size: 12px;
+}
+
+header nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+header li:nth-child(4) a {
+  color: red;
+}
+
+header li:nth-child(4) a:hover {
+  text-decoration: underline;
+}
+
+#redes a:first-child::after {
+  content: url("../img/facebook.png");
+  display: inline-block;
+}
+
+#redes a:nth-child(2)::after {
+  content: url("../img/twitter.png");
+  display: inline-block;
+}
+
+#redes a:last-child::after {
+  content: url("../img/linkedin.png");
+  display: inline-block;
+}
+
+#redes a span {
+  display: none;
+}
+
+#redes a {
+  padding-right: 10px;
+}
+
+#redes a:last-child {
+  padding-right: 100px;
+}
+
+#main {
+  display: inline;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  float: left;
+  padding: 20px 0 40px 0;
+}
+
+.banner img {
+  width: 100%;
+}
+
+#main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 40px;
+  color: black;
+}
+
+.principal {
+  display: block;
+  max-width: 800px;
+  text-align: justify;
+  color: #92968c;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Arial";
+  margin: 0 auto;
+}
+
+.productos {
+  display: inline;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.productos li {
+  list-style: none;
+  width: 33%;
+  float: left;
+}
+
+.productos img {
+  width: 100%;
+}
+
+.productos h3 {
+  text-align: center;
+  color: #292a27;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+}
+
+.desc {
+  color: black;
+  font-size: 15px;
+  font-family: "Arial";
+  text-align: left;
+}
+
+.prod_bottom {
+  display: inline;
+  width: 100%;
+}
+
+.price {
+  width: 50%;
+  float: left;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Arial";
+}
+
+.compra {
+  width: 50%;
+  float: left;
+}
+
+.compra span{
+  text-align: right;
+  background-color: #bbdb88;
+  color: white;
+  padding: 2px 10px 2px 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.compra span:hover {
+  color: black;
+  background-color: #85b463;
+}
