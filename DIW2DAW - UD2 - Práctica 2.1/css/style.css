@@ -4,14 +4,13 @@
   padding: 0;
 }
 
-/* Cabecera */
+/* ================= CABECERA ================= */
 header {
-  display: block;
+  display: inline;
   width: 100%;
 }
 
 #logo {
-  /* Logo centrado */
   text-align: center;
   width: 100%;
   float: left;
@@ -30,6 +29,7 @@ header nav {
 #redes {
   float: left;
   width: 50%;
+  text-align: right;
 }
 
 header nav ul {
@@ -45,12 +45,6 @@ header li {
   display: inline;
   text-align: left;
   padding: 20px;
-}
-
-#redes {
-  width: 50%;
-  float: left;
-  text-align: right;
 }
 
 header nav a {
@@ -70,7 +64,7 @@ header li:nth-child(4) a {
 }
 
 header li:nth-child(4) a:hover {
-  text-decoration: underline;
+  color: red;
 }
 
 #redes a:first-child::after {
@@ -100,6 +94,8 @@ header li:nth-child(4) a:hover {
   padding-right: 100px;
 }
 
+/* ================= CUERPO ================= */
+
 #main {
   display: inline;
   width: 100%;
@@ -121,19 +117,31 @@ header li:nth-child(4) a:hover {
   font-family: "Oswald";
   font-size: 40px;
   color: black;
+  margin-bottom: 20px;
+}
+
+/* Estilo compartido para los párrafos del cuerpo y las dos columnas inferiores */
+
+p {
+  color: #92968c;
+  font-family: "Arial";
+  line-height: 32px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .principal {
   display: block;
   max-width: 800px;
-  text-align: justify;
-  color: #92968c;
-  font-size: 18px;
-  line-height: 32px;
-  font-family: "Arial";
   margin: 0 auto;
   padding-bottom: 50px;
 }
+
+.principal p {
+  margin-bottom: 20px;
+}
+
+/* ================= PRODUCTOS ================= */
 
 .productos ul {
   display: flex;
@@ -159,7 +167,7 @@ header li:nth-child(4) a:hover {
   font-size: 15px;
   font-family: "Oswald";
   letter-spacing: 1px;
-  padding-top: 15px;
+  padding: 15px 0 10px 0;
 }
 
 .desc {
@@ -186,13 +194,13 @@ header li:nth-child(4) a:hover {
 }
 
 .compra {
-  width: 20%;
   float: right;
   display: flex;
-  text-align: center;
+  align-items: center;
+  gap: 5px;
   background-color: #bbdb88;
   color: white;
-  padding: 2px 15px 2px 2px;
+  padding: 8px 15px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
@@ -207,21 +215,91 @@ header li:nth-child(4) a:hover {
   background-color: #85b463;
 }
 
+/* ================= PÁRRAFOS EN DOS COLUMNAS ================= */
+
 .doble {
   display: flex;
-  width: 70%;
-  margin: 0 15% 0 15%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .doble p {
-  text-align: justify;
   width: 30%;
-  float: left;
-  padding-top: 20px;
+  padding: 40px 0 40px 0;
+}
+
+.doble p:first-child {
+  margin-left: 15%;
+}
+
+.doble p:last-child {
+  margin-right: 15%;
+}
+
+.doble p::first-letter {
+  color: black;
+  font-size: 30px;
+  font-family: "Oswald";
+}
+
+/* ================= PIE DE PÁGINA ================= */
+
+footer {
+  display: block;
+  width: 100%;
+  background-color: #bbdb88;
+  padding-top: 30px;
+}
+
+.footer_links {
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
 }
 
-footer {
-  display: flex;
-  width: 100%;
+.column {
+  width: 25%;
+  float: left;
+}
+
+.column h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "Oswald";
+  color: white;
+  margin-bottom: 10px;
+}
+
+.column a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Arial";
+}
+
+.column a:visited {
+  color: grey;
+}
+
+.column a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.column li {
+  list-style: none;
+  padding: 5px 0 5px 0;
+}
+
+.column li:last-child {
+  padding-top: 10px;
+}
+
+footer>div:last-child {
+  padding: 150px 0 24px 0;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  font-family: "Arial";
 }
