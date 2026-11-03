@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Arial";
+}
+
 /* ================= CABECERA ================= */
 header {
   display: inline;
@@ -50,7 +54,6 @@ header li {
 header nav a {
   text-decoration: none;
   color: white;
-  font-family: "Arial";
   font-size: 12px;
 }
 
@@ -124,7 +127,6 @@ header li:nth-child(4) a:hover {
 
 p {
   color: #92968c;
-  font-family: "Arial";
   line-height: 32px;
   font-size: 18px;
   text-align: justify;
@@ -173,7 +175,6 @@ p {
 .desc {
   color: black;
   font-size: 15px;
-  font-family: "Arial";
   text-align: left;
   padding-bottom: 15px;
 }
@@ -190,7 +191,6 @@ p {
   color: black;
   font-weight: bold;
   font-size: 20px;
-  font-family: "Arial";
 }
 
 .compra {
@@ -255,6 +255,7 @@ footer {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .column {
@@ -275,7 +276,6 @@ footer {
   color: white;
   text-decoration: none;
   font-size: 15px;
-  font-family: "Arial";
 }
 
 .column a:visited {
@@ -296,10 +296,9 @@ footer {
   padding-top: 10px;
 }
 
-footer>div:last-child {
+footer > div:last-child {
   padding: 150px 0 24px 0;
   text-align: center;
   color: black;
   font-size: 14px;
-  font-family: "Arial";
 }
