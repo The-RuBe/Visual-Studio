@@ -1,0 +1,199 @@
+/* BASE
+● Resetea los márgenes y los padding para evitar que el navegador intervenga, tanto
+de la página general, como de los listados.
+● Toda la página tiene el tipo de letra Arial.
+● Deberás crear una estructura de tipo grid para organizar el esquema base de la
+web.
+● La cabecera tendrá un alto de 130px.
+● El menú tendrá un ancho de 260px.
+● El pie de la página tendrá un alto de 40px.
+● El color utilizado siempre es el mismo: goldenrod. */
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera"
+        "menu main"
+        "footer footer";
+    grid-template-columns: auto 1fr;
+}
+
+ul {
+    list-style: none;
+}
+
+/* CABECERA
+● Tendrá el logo centrado, tanto horizontal como verticalmente. Utiliza flex para
+colocarlo.
+● El logo tendrá un ancho máximo de 100px. */
+
+.cabecera {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    background-color: goldenrod;
+}
+
+.cabecera img {
+    max-width: 100px;
+}
+
+/* MENÚ
+● Color de fondo: #eee.
+● Espaciado interior, tanto por arriba como por la izquierda de 20px.
+● Cada elemento del listado tiene un margen inferior de 10px para separarlo del
+siguiente.
+● Los enlaces del menú están en mayúsculas, subrayados, con un tamaño de letra de
+20px y un interletrado de 1px.
+● El enlace marcado con la clase selected está en color goldenrod.
+● Al pasar el ratón por encima de los enlaces también se cambiarán a goldenrod. */
+
+.menu {
+    grid-area: menu;
+    width: 260px;
+    background-color: #eee;
+    padding: 20px 0 0 20px;
+}
+
+.menu nav ul li {
+    margin-bottom: 10px;
+}
+
+.menu nav ul li a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.menu nav ul li a.selected,
+.menu nav ul li a:hover {
+    color: goldenrod;
+}
+
+/* MAIN
+● Deberás colocar todo el contenido de este bloque de manera quede centrado
+respecto al logo. Para esto piensa qué le puede estar afectando y juega con esos
+espacios.
+● El título de tipo H1 está en mayúsculas y centrado. */
+
+.main {
+    grid-area: main;
+    margin-right: 280px;
+    text-align: center;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* FILTRO
+● Este bloque tendrá un ancho fijo de 750px y estará centrado.
+● Los elementos del filtrado están repartidos en el espacio, de manera que el primero
+queda pegado a la izquierda, y el último a la derecha. Utiliza flex para colocarlos.
+● Los enlaces no están subrayados. Tienen color de texto blanco, en negrita y un
+espaciado interior de 4px.
+● Tanto el elemento marcado con la clase selected, como los elementos al pasar por
+encima, tienen el mismo estilo: color de fondo negro y color de letra goldenrod. */
+
+.filtro {
+    margin: 0 auto;
+    width: 750px;
+    text-align: center;
+}
+
+.filtro ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtro ul li a {
+    background-color: goldenrod;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.filtro ul li a.selected,
+.filtro ul li a:hover {
+    background-color: black;
+    color: goldenrod;
+}
+
+
+/* MARCAS
+● Este bloque tendrá un ancho fijo de 750px y estará centrado.
+● Los elementos están colocados por columnas, de forma que cuando no quepan,
+pasan a la siguiente columna de forma automática, adaptarse al espacio que hay
+disponible.
+● El listado tendrá un alto de 400px.
+● Habrá un espaciado uniforme entre elementos de 4px.
+● Cada elemento de la lista tiene un fondo de color #eee. Un borde redondeado de
+16px y un espaciado interior de 6px.
+● Al pasar por encima de cada elemento, el texto se pondrá de color gold, el fondo de
+color goldenrod, y el cursor del ratón cambiará a una flecha.
+● Los elementos marcados con la clase nostock tendrán un color de letra #ddd, y al
+pasar el ratón deben mantener este estilo, sin cambiarse. El ratón deberá ponerse
+con estilo not-allowed. */
+
+.marcas {
+    width: 750px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.marcas ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    gap: 4px;
+}
+
+.marcas ul li {
+    background-color: #eee;
+    border-radius: 16px;
+    padding: 6px;
+
+}
+
+.marcas ul li:hover {
+    color: gold;
+    background-color: goldenrod;
+    cursor: default;
+}
+
+.marcas ul li.nostock,
+.marcas ul li.nostock:hover {
+    color: #ddd;
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+/* FOOTER
+● El contenido estará alineado al centro tanto vertical como horizontalmente.
+● El texto tendrá un tamaño de 12px y color blanco. */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    grid-area: footer;
+    height: 40px;
+    background-color: goldenrod;
+}
