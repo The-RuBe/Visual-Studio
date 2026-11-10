@@ -11,22 +11,23 @@ web.
 
 body,
 ul {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
 }
 
 body {
-    display: grid;
-    grid-template-areas:
-        "cabecera cabecera"
-        "menu main"
-        "footer footer";
-    grid-template-columns: auto 1fr;
+  display: grid;
+  grid-template-areas:
+    "cabecera cabecera"
+    "menu main"
+    "footer footer";
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 130px 1fr 40px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* CABECERA
@@ -35,16 +36,15 @@ colocarlo.
 ● El logo tendrá un ancho máximo de 100px. */
 
 .cabecera {
-    grid-area: cabecera;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 130px;
-    background-color: goldenrod;
+  grid-area: cabecera;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
 }
 
 .cabecera img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 /* MENÚ
@@ -58,27 +58,26 @@ siguiente.
 ● Al pasar el ratón por encima de los enlaces también se cambiarán a goldenrod. */
 
 .menu {
-    grid-area: menu;
-    width: 260px;
-    background-color: #eee;
-    padding: 20px 0 0 20px;
+  grid-area: menu;
+  background-color: #eee;
+  padding: 20px 0 0 20px;
 }
 
 .menu nav ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .menu nav ul li a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-size: 20px;
-    letter-spacing: 1px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .menu nav ul li a.selected,
 .menu nav ul li a:hover {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 /* MAIN
@@ -88,14 +87,14 @@ espacios.
 ● El título de tipo H1 está en mayúsculas y centrado. */
 
 .main {
-    grid-area: main;
-    margin-right: 280px;
-    text-align: center;
+  grid-area: main;
+  margin-right: 260px;
+  text-align: center;
 }
 
 .main h1 {
-    text-transform: uppercase;
-    text-align: center;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* FILTRO
@@ -108,31 +107,30 @@ espaciado interior de 4px.
 encima, tienen el mismo estilo: color de fondo negro y color de letra goldenrod. */
 
 .filtro {
-    margin: 0 auto;
-    width: 750px;
-    text-align: center;
+  margin: 0 auto;
+  width: 750px;
+  text-align: center;
 }
 
 .filtro ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .filtro ul li a {
-    background-color: goldenrod;
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 4px;
+  background-color: goldenrod;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 4px;
 }
 
 .filtro ul li a.selected,
 .filtro ul li a:hover {
-    background-color: black;
-    color: goldenrod;
+  background-color: black;
+  color: goldenrod;
 }
-
 
 /* MARCAS
 ● Este bloque tendrá un ancho fijo de 750px y estará centrado.
@@ -150,37 +148,36 @@ pasar el ratón deben mantener este estilo, sin cambiarse. El ratón deberá pon
 con estilo not-allowed. */
 
 .marcas {
-    width: 750px;
-    margin: 20px auto;
-    text-align: center;
+  width: 750px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .marcas ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 400px;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 400px;
+  gap: 4px;
 }
 
 .marcas ul li {
-    background-color: #eee;
-    border-radius: 16px;
-    padding: 6px;
-
+  background-color: #eee;
+  border-radius: 16px;
+  padding: 6px;
 }
 
 .marcas ul li:hover {
-    color: gold;
-    background-color: goldenrod;
-    cursor: default;
+  color: gold;
+  background-color: goldenrod;
+  cursor: default;
 }
 
 .marcas ul li.nostock,
 .marcas ul li.nostock:hover {
-    color: #ddd;
-    background-color: #eee;
-    cursor: not-allowed;
+  color: #ddd;
+  background-color: #eee;
+  cursor: not-allowed;
 }
 
 /* FOOTER
@@ -188,12 +185,11 @@ con estilo not-allowed. */
 ● El texto tendrá un tamaño de 12px y color blanco. */
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    color: white;
-    grid-area: footer;
-    height: 40px;
-    background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  grid-area: footer;
+  background-color: goldenrod;
 }
