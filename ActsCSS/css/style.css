@@ -1,41 +1,30 @@
-* {
+body, h1 {
   margin: 0;
 }
 
-.izquierda, .derecha {
-  display: inline;
-  width: 33%;
-  border: 2px dotted;
-  background-color: #808080;
-  margin: 5px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-}
-
-.izquierda {
-  float: left;
-}
-
-.derecha {
-  float: right;
-}
-
-.texto-largo {
-  padding-top: 50px;
-  width: 100%;
-  float: left;
-}
-
-.texto-largo p {
-  width: 50%;
-  margin: 0 auto;
-  text-align: right;
-}
-
-.foot {
-  position: fixed;
-  width: 100%;
+header {
   text-align: center;
-  background-color: gray;
-  bottom: 0;
+  background-color: #333333;
+  width: 100%;
+  color: #FFFFF5;
+  padding: 20px;
+}
+
+.perfil {
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  margin: 20px 25% 20px 25%;
+}
+
+.perfil img {
+  float: left;
+  border-radius: 50%;
+  width: 15%;
+  height: 100%;
+}
+
+.perfil-info {
+  float: left;
+  padding-left: 30px;
 }
